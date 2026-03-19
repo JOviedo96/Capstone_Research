@@ -44,6 +44,8 @@ Step 1 — Scrape Reviews
 bashpython scraper.py
 This will scrape App Store and Google Play reviews for all configured competitors and save the results to competitor_reviews.csv. The CSV contains the following columns:
 ColumnDescriptionidReview IDratingStar rating (1–5)titleReview titlecontentReview body textdateReview datesourceapple or googlecompetitorApp name
+**To get as similar data as possible the most recent the data should be scraped is 09/16/2025 and go back as far as the app was on the app stores. 
+
 Step 2 — Run the Analysis Notebook
 Open sentiment_analysis.ipynb in Jupyter and run the cells in order. Each step is self-contained:
 StepDescription1Data loading and initial exploration2Data quality assessment and distribution3Basic cleaning (deduplication, null removal, English filtering)4Feature-focused filtering (removes technical complaints, keeps UX/feature discussions)5Feature category extraction and sentiment scoring per competitor6User needs and pain point extraction7Feature gap analysis and strategic recommendations8Competitive feature matrix with heatmap visualizations9Data-driven user persona development10User journey mapping and feature prioritization
